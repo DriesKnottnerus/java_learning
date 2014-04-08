@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Auto-Completion using Ajax</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript" src="javascript.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body onload="init()">
+        <h1>Achmea vertaling using Ajax</h1>
+        
+        <p>In the form below enter a dutch frase. Possible matching frases and their translations are displayed
+            below the form. For example, try typing in "Verhaal".</p>
+        <form name="autofillform" action="complete">
+            <table border="">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Zoekterm:</strong></td>
+                        <td><input type="text"
+                                   size="40"
+                                   id="complete-field"
+                                   onkeyup="doCompletion();"></td>
+                    </tr>
+                    <tr><table id="complete-table"></table>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
