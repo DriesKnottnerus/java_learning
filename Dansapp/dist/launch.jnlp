@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>DansApp</title>
+        <vendor>dknottne</vendor>
+        <homepage href=""/>
+        <description>DansApp</description>
+        <description kind="short">DansApp</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.7+"/>
+        <jar href="DansApp.jar" main="true"/>
+    </resources>
+    <applet-desc height="700" main-class="dansen.Dans" name="DansApp" width="700">
+    </applet-desc>
+</jnlp>
